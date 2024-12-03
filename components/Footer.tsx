@@ -54,17 +54,6 @@ export function FooterImpl() {
       </div>
 
       <div className={styles.social}>
-        {config.twitter && (
-          <a
-            className={styles.twitter}
-            href={`https://twitter.com/${config.twitter}`}
-            title={`Twitter @${config.twitter}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaTwitter />
-          </a>
-        )}
 
         {config.mastodon && (
           <a
@@ -101,41 +90,6 @@ export function FooterImpl() {
           </a>
         )}
 
-        {config.linkedin && (
-          <a
-            className={styles.linkedin}
-            href={`https://www.linkedin.com/in/${config.linkedin}`}
-            title={`LinkedIn ${config.author}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaLinkedin />
-          </a>
-        )}
-
-        {config.newsletter && (
-          <a
-            className={styles.newsletter}
-            href={`${config.newsletter}`}
-            title={`Newsletter ${config.author}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaEnvelopeOpenText />
-          </a>
-        )}
-
-        {config.youtube && (
-          <a
-            className={styles.youtube}
-            href={`https://www.youtube.com/${config.youtube}`}
-            title={`YouTube ${config.author}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaYoutube />
-          </a>
-        )}
       </div>
     </footer>
   )
